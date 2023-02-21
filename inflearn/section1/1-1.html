@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a, b, c){
+                let answer;
+                // 내가 작성한 코드
+                // if(Number.isInteger(a) && Number.isInteger(b) && Number.isInteger(c)) {
+
+                //     if(a - b <= 0 && a - c <= 0) {
+                //         answer = a;
+                //     }else if(b - a <= 0 && b - c <= 0){
+                //         answer = b;
+                //     }else if(c - a <= 0 && c - b <= 0) {
+                //         answer = c;
+                //     }
+                // }
+
+                if(a < b) answer = a;
+                else answer = b;
+                if(c < answer) answer = c;
+
+                return answer;
+            }
+            console.log(solution(15, 5, 3));
+        </script>
+    </body>
+</html>

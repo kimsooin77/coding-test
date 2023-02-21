@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(n){
+                let answer=0;
+                let arr = [];
+                
+                for(let i = 1; i <= n; i++) {
+                    arr = [...arr, i];
+                    // arr.reduce((acc,curr) => {
+                    //     answer = acc + curr;
+                    //     return answer
+                    // }, 0);
+
+                    // 풀이
+                    answer = answer + i;
+                }
+                console.log(arr)
+
+                
+                
+                return answer;
+            }
+
+            console.log(solution(10));
+        </script>
+    </body>
+</html>

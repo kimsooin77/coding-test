@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a, b, c){
+                let answer="YES", max;
+
+                // 가장 긴 변의 길이를 찾아내기
+                // 가장 긴 변의 길이가 나머지 두 변의 길이 합 보다 작으면 yes출력
+                // 아니면 no 출력
+
+                if(a < b) max = b;
+                else max = a;
+                if(max < c) max = c;
+
+                // if(max === a) {
+                //     a < b + c ? answer = "YES" : answer = "NO";
+                // }else if(max === b) {
+                //     b < a + c ? answer = "YES" : answer = "NO";
+                // }else c < a + b ? answer = "YES" : answer = "NO";
+
+                // 풀이
+                let sum = a + b + c;
+                if((sum - max) <= max) answer = "NO";
+            
+                return answer;
+            }
+
+            console.log(solution(13, 33, 17));
+        </script>
+    </body>
+</html>
