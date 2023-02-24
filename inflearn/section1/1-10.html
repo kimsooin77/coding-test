@@ -7,6 +7,9 @@
         <script>
             function solution(s, t){
                 let answer=0;
+
+                let arr = s.split('');
+                answer = arr.filter((v) => v === t).length;
                 
                 return answer;
             }
@@ -16,4 +19,3 @@
         </script>
     </body>
 </html>
-

@@ -7,8 +7,18 @@
         <script>
             function solution(s){         
                 let answer=0;
+                // solution 1
+                // let arr = s.split('');
+                // arr.filter((v) => {
+                //     if(v.match(/[A-Z]/)) answer += 1;
+                //     return answer;
+                // });
                 
-                return answer;
+                // return answer;
+
+                // solution 2
+                answer  = [...s.matchAll(/[A-Z]/g)].length;
+                return answer
             }
 
             let str="KoreaTimeGood";

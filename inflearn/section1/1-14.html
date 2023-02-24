@@ -7,6 +7,12 @@
         <script>
             function solution(s){  
                 let answer="", max=Number.MIN_SAFE_INTEGER;
+                s.forEach((v) => {
+                    let len = v.length;
+                    if(answer.length < len) answer = v;
+                    return answer;
+                });
+
                
                 return answer;
             }

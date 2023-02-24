@@ -7,7 +7,14 @@
         <script>
             function solution(s){  
                 let answer="";
-                
+                let arr = s.split('');
+                arr = arr.map((v) => {
+                    if(v.match(/[A-Z]/)) {
+                        v = v.toLowerCase();
+                    }else v = v.toUpperCase();
+                    return v;
+                })
+                answer = arr.join("");
                 return answer;
             }
 
