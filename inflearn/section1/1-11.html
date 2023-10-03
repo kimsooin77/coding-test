@@ -18,6 +18,17 @@
 
                 // solution 2
                 answer  = [...s.matchAll(/[A-Z]/g)].length;
+
+                // solution 3
+                // for(let x of s) {
+                    // if(x === x.toUpperCase()) answer++;
+                // }
+
+                // solution 4
+                // for(let x of s) {
+                //     let num = x.charCodeAt();
+                //     if(num>=65 && num <= 90) answer++;
+                // }
                 return answer
             }
 

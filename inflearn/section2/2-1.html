@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(arr){         
+                let answer=[];
+                const num = arr.length;
+                answer = arr.filter((v) => v >= num );
+                if(!answer.includes(arr[0])) answer = answer.concat(arr[0])
+               
+                return answer;
+            }
+
+            let arr=[7, 3, 9, 5, 6, 12];
+            console.log(solution(arr));
+        </script>
+    </body>
+</html>

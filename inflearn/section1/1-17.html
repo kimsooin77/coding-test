@@ -6,10 +6,14 @@
     <body>
         <script>
             function solution(s){  
-                let answer;
-                answer = new Set(s);
-                answer = Array.from(answer).join(',');
-                return answer;
+                let answer=[];
+                // solution1
+                // answer = new Set(s);
+                // answer = Array.from(answer).join(',');
+
+                // solution2
+                s.map((v) => !answer.includes(v) && (answer = [...answer, v]) )
+                return answer.join(',');
             }
             let str=["good", "time", "good", "time", "student"];
             console.log(solution(str));

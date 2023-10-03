@@ -11,6 +11,11 @@
                 
                 newArr = arr.filter((n) => String(n)[1] === String(day));
                 answer = newArr.length;
+
+                //solution2
+                // for(let x of arr) {
+                //     if(x%10 === day) answer++;
+                // }
                 console.log(answer);
                 
                 return answer;
